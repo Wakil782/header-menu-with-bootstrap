@@ -32,6 +32,14 @@
           'walker' => new Bootstrap5_WP_Navwalker(),
         ));
       ?>
+      <!-- Search form -->
+       <form action="<?php echo home_url(); ?>" method="get" style="display: flex; align-items: center;">
+    <input type="text" name="s" value="<?php the_search_query(); ?>" placeholder="Search...">
+    <button type="submit" style="border: none; background: none; cursor: pointer;">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+</form>
+
     </div> <!-- container শেষ -->
   </nav>
 </header>
